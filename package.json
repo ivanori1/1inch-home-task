@@ -1,0 +1,25 @@
+{
+  "name": "checkout-flow-exercise",
+  "version": "1.0.0",
+  "description": "API Testing Exercise - User Checkout Flow with Playwright and Cucumber",
+  "private": true,
+  "scripts": {
+    "test": "cucumber-js --require-module tsconfig-paths/register --config=api/config/cucumber.cjs",
+    "test:wip": "cucumber-js --require-module tsconfig-paths/register --config=api/config/cucumber.cjs --tags @wip",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.40.0",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.0"
+  }
+}
+
+
